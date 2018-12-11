@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %} Login {% endblock %}
+{% block content %}
+
+<title>welcome page</title>
+
+
+<p>welcome, {{ username }} enjoy learning don't forget to put a review  - <a href="{{url_for('logout')}}">logout</a></p>
+
+{% endblock %}
