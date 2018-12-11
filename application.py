@@ -43,7 +43,7 @@ def login():
 @app.route("/welcome")
 def welcome():
     if 'username' in session:
-        return render_template('welcome.html', username=session['username'])
+        return render_template('welcome.html', username = session['username'])
     else:
         return redirect(url_for('login'))
 
